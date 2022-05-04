@@ -10,7 +10,6 @@ func main() {
 		fmt.Println(err.Error())
 		return
 	}
-	fmt.Println(n)
 	result := isPrimeNumber(n)
 	if result {
 		fmt.Println("number is prime")
