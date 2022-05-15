@@ -16,7 +16,7 @@ func main() {
 	var result []int
 	tmp := n
 	for {
-		min, err := getMinCommonDivisor(tmp)
+		min, err := getMinDivisor(tmp)
 		if err != nil {
 			result = append(result, tmp)
 			break
@@ -29,7 +29,7 @@ func main() {
 	}
 }
 
-func getMinCommonDivisor(n int) (int, error) {
+func getMinDivisor(n int) (int, error) {
 	for i := 2; i*i <= n; i++ {
 		if n%i == 0 {
 			return i, nil
